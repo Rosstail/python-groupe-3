@@ -114,8 +114,7 @@ def string_length_to_multiple(string):
     :param string:
     :return:
     """
-    while int(len(string) / 4) != 0:
-        print(int(len(string) / 4))
+    while int(len(string) % 4) != 0:
         string = string + "="
     return string
 
@@ -150,8 +149,8 @@ def main():
     six_string = chr_array_to_string(six_array)  # Ex 10
     print(six_string)
 
-    #six_string = string_length_to_multiple(six_string)  # Ex 11
-    #print("test " + six_string)
+    six_string = string_length_to_multiple(six_string)  # Ex 11
+    print(six_string)
 
 
 if __name__ == '__main__':

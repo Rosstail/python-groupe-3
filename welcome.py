@@ -3,8 +3,6 @@ Copyright Lololol
 
 """
 
-import base64
-
 
 def input_checker():
     string_input = input("Entrez votre chaine : ")
